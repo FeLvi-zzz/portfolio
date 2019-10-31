@@ -62,7 +62,7 @@
           About
         </h2>
         <div class="columns">
-          <div class="column is-4-desktop is-full-mobile" id="profile">
+          <div class="column is-half is-full-mobile" id="profile">
             <figure class="image is-128x128">
               <img
                 class="is-rounded"
@@ -71,7 +71,7 @@
               />
             </figure>
           </div>
-          <div class="column is-8-desktop is-full-mobile">
+          <div class="column is-half is-full-mobile">
             <table class="table is-fullwidth">
               <tbody>
                 <tr v-for="item in about" :key="item.head">
@@ -155,9 +155,9 @@
                 </p>
               </div>
               <div class="tags" v-show="item.tag">
-                <span class="tag" v-for="tag in item.tag" :key="tag">{{
-                  tag
-                }}</span>
+                <span class="tag" v-for="tag in item.tag" :key="tag">
+                  {{ tag }}
+                </span>
               </div>
               <div class="card-image" v-show="item.img">
                 <figure class="image">
@@ -391,7 +391,7 @@ export default {
       experience: [
         {
           name: "Literary Forest",
-          img: require("./static/literaryforest.png"),
+          img: require("./static/LiteraryForest.png"),
           comment:
             "他のユーザーと、ツリー形式でリレー型のアンソロジーをつくるwebサービスです。趣味で長期休暇を使い2週間程度で制作しました。\nリレー型アンソロジーということを意識させるための表現を工夫し、短文小説の書かれたカードを線でつなぐという方法を取りました。",
           link: "https://literary-forest.herokuapp.com/",
@@ -407,7 +407,7 @@ export default {
           ]
         },
         {
-          name: "基幹業務システム",
+          name: "基幹業務システム等",
           comment:
             "基幹業務システムの提案・要件定義・設計・開発等を行いました。\nその他社内業務に使用するITシステムの選定、導入・運用作業、お客様に提供するサービスに使用するソフトウェアの選定、プログラムの開発、ネットワークの設計・構築作業などを行いました。",
           tag: [
@@ -419,15 +419,45 @@ export default {
           ]
         },
         {
-          name: "人材管理SaaS開発",
+          name: "人材管理SaaS",
           comment:
             "将来的な拡張性を考えて使用する技術の選定・設計を行い、それを元に開発・テストなどを行いました。",
           tag: ["AWS EC2", "AWS S3", "Node.js", "Express", "Nuxt.js"]
         },
         {
+          name: "freeeサマーインターン (2Weeks)",
+          comment:
+            "新しい勤怠管理プロダクトの企画から実装までを3人のチームで2週間取り組み、挨拶の声をトリガーとして、発声した人の顔を認識し自動で勤怠の打刻をするプロダクトを開発しました。\n音声・顔認識システムから人事労務freee APIにアクセスするためのSDK開発、DB設計、データ管理システムの開発を担当しました。",
+          tag: ["Python3", "Node.js", "Express", "Vue.js", "Firebase"]
+        },
+        {
+          name: "チームラボサマーインターン (2Weeks)",
+          comment:
+            "既存システムインフラの監視項目を充実させるため、Amazon CloudWatch Container Insights、AWS X-rayを使用して監視項目を追加しました。",
+          tag: [
+            "Terraform",
+            "Go",
+            "Amazon CloudWatch",
+            "Amazon ECS",
+            "Amazon ECR",
+            "AWS Fargate",
+            "AWS X-ray",
+            "Amazon VPC",
+            "ELB",
+            "Amazon SNS"
+          ]
+        },
+        {
+          name: "ポートフォリオ",
+          comment:
+            "このサイトです。\nVue.js+Bulmaで開発しており、各種項目の編集をしやすいように内容を変数として切り出しています。",
+          link: "https://felvi-zzz.github.io/",
+          tag: ["Vue.js", "Bulma"]
+        },
+        {
           name: "その他",
           comment:
-            "Paiza Sランク\n横浜国立大学 学業優秀者表彰 平成30年度春学期、秋学期"
+            "Paiza Sランク\n横浜国立大学 学業優秀者表彰 平成30年度春学期、秋学期、令和元年度春学期\nTOEFL ITP 507"
         }
       ],
       contact: [
@@ -482,6 +512,12 @@ h2 {
 
 .section {
   padding-bottom: 0;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  word-break: keep-all;
 }
 
 #profile {
