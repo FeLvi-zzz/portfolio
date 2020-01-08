@@ -451,13 +451,13 @@ export default {
           name: "ポートフォリオ",
           comment:
             "このサイトです。\nVue.js+Bulmaで開発しており、各種項目の編集をしやすいように内容を変数として切り出しています。",
-          link: "https://felvi-zzz.github.io/",
+          link: "https://github.com/FeLvi-zzz/portfolio",
           tag: ["Vue.js", "Bulma"]
         },
         {
           name: "その他",
           comment:
-            "Paiza Sランク\n横浜国立大学 学業優秀者表彰 平成30年度春学期、秋学期、令和元年度春学期\nTOEFL ITP 507"
+            "Paiza Sランク\n横浜国立大学 学業優秀者表彰 平成30年度春学期、秋学期、令和元年度春学期\nTOEFL ITP 507\nAtCoder 緑"
         }
       ],
       contact: [
