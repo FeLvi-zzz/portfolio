@@ -251,7 +251,7 @@ export default {
         },
         {
           head: "Hobby",
-          body: "ギター・アニメ・競プロ"
+          body: "ギター・アニメ・競プロ・麻雀"
         }
       ],
       skill: {
@@ -339,7 +339,7 @@ export default {
           {
             name: "GCP (BigQuery)",
             icon: "devicon-google-plain",
-            level: 2
+            level: 3
           },
           {
             name: "FireBase",
@@ -456,8 +456,13 @@ export default {
         },
         {
           name: "その他",
-          comment:
-            "Paiza Sランク\n横浜国立大学 学業優秀者表彰 平成30年度春学期、秋学期、令和元年度春学期\nTOEFL ITP 507\nAtCoder 緑"
+          comment: [
+            "Paiza Sランク",
+            "横浜国立大学 学業優秀者表彰 平成30年度春学期、秋学期、令和元年度春学期",
+            "令和元年度 データ解析コンペティション OR部会 学生奨励賞",
+            "TOEFL ITP 507",
+            "AtCoder 緑"
+          ].join("\n")
         }
       ],
       contact: [
