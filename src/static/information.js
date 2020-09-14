@@ -25,8 +25,18 @@ export default {
         level: 4
       },
       {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain",
+        level: 4
+      },
+      {
         name: "Python3",
         icon: "devicon-python-plain",
+        level: 4
+      },
+      {
+        name: "Ruby",
+        icon: "devicon-ruby-plain",
         level: 3
       },
       {
@@ -40,6 +50,11 @@ export default {
         level: 4
       },
       {
+        name: "Go",
+        icon: "devicon-go-plain",
+        level: 2
+      },
+      {
         name: "VBA",
         icon: "fas fa-file-excel",
         level: 3
@@ -47,11 +62,6 @@ export default {
       {
         name: "GAS",
         icon: "devicon-google-plain",
-        level: 3
-      },
-      {
-        name: "Ruby",
-        icon: "devicon-ruby-plain",
         level: 3
       },
       {
@@ -67,6 +77,11 @@ export default {
       {
         name: "Node.js",
         icon: "devicon-nodejs-plain",
+        level: 4
+      },
+      {
+        name: "React",
+        icon: "devicon-react-plain",
         level: 4
       },
       {
@@ -88,14 +103,14 @@ export default {
         level: 3
       },
       {
-        name: "Ruby on Rails 5",
+        name: "Ruby on Rails 5,6",
         icon: "devicon-rails-plain",
         level: 3
       }
     ],
     "インフラ / Infrastructure": [
       {
-        name: "AWS",
+        name: "AWS (EC2, RDS, S3, CloudWatch, CodeDeploy, ...)",
         icon: "devicon-amazonwebservices-original",
         level: 3
       },
@@ -206,8 +221,7 @@ export default {
     },
     {
       name: "ポートフォリオ",
-      comment:
-        "このサイトです。\nVue.js+Bulmaで開発しており、各種項目の編集をしやすいように内容を変数として切り出しています。",
+      comment: "このサイトです。\nVue.js+Bulmaで開発しています。",
       link: "https://github.com/FeLvi-zzz/portfolio",
       tag: ["Vue.js", "Bulma"]
     },
